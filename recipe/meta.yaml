@@ -1,13 +1,13 @@
 {% set name = "sphinx-data-viewer" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-data-viewer-{{ version }}.tar.gz
-  sha256: f99a4bf2c09b59e2e302ff51198c62acd5df83317f0226c170e47980b4445094
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a7d5e58613562bb745380bfe61ca8b69997998167fd6fa9aea55606c9a4b17e4
 
 build:
   noarch: python
